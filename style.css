@@ -61,7 +61,40 @@ body{
 
 #buttons-2{
     display: none;
+    padding: 5px;
 }
+
+#middleLeft{
+    width: 40px;
+    background-color: rgb(212, 212, 212);
+    font-size: large;
+    margin: auto 2px;
+    text-align: center;
+}
+
+#middleTop{
+    width: 40px;
+    background-color: rgb(212, 212, 212);
+    font-size: large;
+    margin: auto 2px;
+    text-align: center;
+}
+
+#middleRight{
+    width: 40px;
+    background-color: rgb(212, 212, 212);
+    font-size: large;
+    margin: auto 2px;
+    text-align: center;
+}
+
+#middleBottom{
+    width: 40px;
+    background-color: rgb(212, 212, 212);
+    font-size: large;
+    margin: auto 2px;
+    text-align: center;
+}   
 
 #botao-copiar{
     width: 60px;
