@@ -24,10 +24,10 @@ body{
 
 #buttons{
     display: inline-flex;
-    padding: 10px;
+    padding: 5px;
 }
 
-#left1 input{
+#topLeft{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -35,7 +35,7 @@ body{
     text-align: center;
 }
 
-#left0 input{
+#bottomLeft{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -43,7 +43,7 @@ body{
     text-align: center;
 }
 
-#right1 input{
+#topRight{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -51,10 +51,24 @@ body{
     text-align: center;
 }
 
-#right0 input{
+#bottomRight{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
     margin: auto 2px;
     text-align: center;
 }   
+
+#buttons-2{
+    display: none;
+}
+
+#botao-copiar{
+    width: 60px;
+    background-color: rgb(253, 178, 236);
+    font-size: smaller;
+    border: none;
+    margin-left: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}

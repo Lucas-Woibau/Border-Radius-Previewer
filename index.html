@@ -8,13 +8,24 @@
     <title>Border Radius Previewer</title>
 </head>
 <body>
-    <h1>Border Radius</h1>
+    <h1>Border Radius Previewer</h1>
     <div id="borda"></div>
     <div id="buttons">
-        <div id="left1"><input class="lado" type="number" placeholder="px"></div>
-        <div id="left0"><input class="lado" type="number" placeholder="px"></div>
-        <div id="right1"><input class="lado" type="number" placeholder="px"></div>
-        <div id="right0"><input class="lado" type="number" placeholder="px"></div>
+        <input id="topLeft" type="number" placeholder="px">
+        <input id="bottomLeft" type="number" placeholder="px">
+        <input id="topRight" type="number" placeholder="px">
+        <input id="bottomRight" type="number" placeholder="px">
+
+        <button type="button" id="botao-copiar" onclick="CopiarValores()">COPIAR</button>
+    </div>
+
+    <div id="buttons-2">
+        <input id="middleLeft" type="number" placeholder="px">
+        <input id="middleTop" type="number" placeholder="px">
+        <input id="middleRight" type="number" placeholder="px">
+        <input id="middleBottom" type="number" placeholder="px">
+
+        <button type="button" id="botao-copiar" onclick="CopiarValores()">COPIAR</button>
     </div>
     
     <script src="script.js"></script>
