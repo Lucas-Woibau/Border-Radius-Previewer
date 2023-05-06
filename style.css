@@ -9,7 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#container{
+#borda{
     display: block;
     width: 300px;
     height: 250px;
@@ -27,7 +27,7 @@ body{
     padding: 10px;
 }
 
-.left1 input{
+#left1 input{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -35,7 +35,7 @@ body{
     text-align: center;
 }
 
-.left0 input{
+#left0 input{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -43,7 +43,7 @@ body{
     text-align: center;
 }
 
-.right1 input{
+#right1 input{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
@@ -51,7 +51,7 @@ body{
     text-align: center;
 }
 
-.right0 input{
+#right0 input{
     width: 40px;
     background-color: rgb(212, 212, 212);
     font-size: large;
