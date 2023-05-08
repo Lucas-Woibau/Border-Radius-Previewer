@@ -97,11 +97,21 @@ body{
 }   
 
 #botao-copiar{
-    width: 60px;
+    width: 70px;
     background-color: rgb(253, 178, 236);
     font-size: smaller;
     border: none;
     margin-left: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#botao-mostrar{
+    width: 100px;
+    background-color: rgb(253, 178, 236);
+    font-size: 15px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
     cursor: pointer;
 }

@@ -15,6 +15,34 @@ inputs.forEach(input => {
     })
 });
 
+inputs.forEach(input => {
+    input.addEventListener('input', () =>{
+        const middleLeft = document.getElementById('middleLeft').value;
+        const middleTop = document.getElementById('middleTop').value;
+        const middleRight = document.getElementById('middleRight').value;
+        const middleBottom = document.getElementById('middleBottom').value;
+
+        borda.style.borderTopLeftRadius = `${middleLeft}px`;
+        borda.style.borderBottomLeftRadius = `${middleTop}px`;
+        borda.style.borderTopRightRadius= `${middleRight}px`;
+        borda.style.borderBottomRightRadius = `${middleBottom}px`
+    })
+});
+
+function MostrarNovosValores(){
+    const novosValores = document.getElementById('buttons-2')
+    const botao = document.getElementById('botao-mostrar')
+
+    if(novosValores.style.display === 'none'){
+        novosValores.style.display = 'list-item';
+        botao.textContent = "Desabilitar 8 valores!"
+    }
+    else{
+        novosValores.style.display = 'none';
+        botao.textContent = "Habilitar 8 valores!"
+    }
+}
+
 function CopiarValores(){
     const input = document.getElementById('botao-copiar')
 
