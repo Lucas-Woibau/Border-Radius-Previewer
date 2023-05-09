@@ -3,35 +3,28 @@ const inputs = document.querySelectorAll('input[type = "number"]')
 
 inputs.forEach(input => {
     input.addEventListener('input', () =>{
-        const topLeft = document.getElementById('topLeft').value;
-        const bottomLeft = document.getElementById('bottomLeft').value;
-        const topRight = document.getElementById('topRight').value;
-        const bottomRight = document.getElementById('bottomRight').value;
+        const topLeft = document.getElementById('topLeft').value;//a     
+        const topRight = document.getElementById('topRight').value;//b
+        const bottomRight = document.getElementById('bottomRight').value;//c
+        const bottomLeft = document.getElementById('bottomLeft').value;//d
+        
+        const middleTop = document.getElementById('middleTop').value;//e
+        const middleRight = document.getElementById('middleRight').value;//f
+        const middleBottom = document.getElementById('middleBottom').value;//g
+        const middleLeft = document.getElementById('middleLeft').value;//h
 
         borda.style.borderTopLeftRadius = `${topLeft}px`;
+        borda.style.borderTopRightRadius = `${topRight}px`;
         borda.style.borderBottomLeftRadius = `${bottomLeft}px`;
-        borda.style.borderTopRightRadius= `${topRight}px`;
-        borda.style.borderBottomRightRadius = `${bottomRight}px`
+        borda.style.borderBottomRightRadius = `${bottomRight}px`;
     })
 });
 
-inputs.forEach(input => {
-    input.addEventListener('input', () =>{
-        const middleLeft = document.getElementById('middleLeft').value;
-        const middleTop = document.getElementById('middleTop').value;
-        const middleRight = document.getElementById('middleRight').value;
-        const middleBottom = document.getElementById('middleBottom').value;
+const botao = document.getElementById('botao-mostrar')
 
-        borda.style.borderTopLeftRadius = `${middleLeft}px`;
-        borda.style.borderBottomLeftRadius = `${middleTop}px`;
-        borda.style.borderTopRightRadius= `${middleRight}px`;
-        borda.style.borderBottomRightRadius = `${middleBottom}px`
-    })
-});
-
-function MostrarNovosValores(){
+window.onload = function(){
+botao.addEventListener('click', () => {
     const novosValores = document.getElementById('buttons-2')
-    const botao = document.getElementById('botao-mostrar')
 
     if(novosValores.style.display === 'none'){
         novosValores.style.display = 'list-item';
@@ -41,11 +34,13 @@ function MostrarNovosValores(){
         novosValores.style.display = 'none';
         botao.textContent = "Habilitar 8 valores!"
     }
+});
 }
 
-function CopiarValores(){
-    const input = document.getElementById('botao-copiar')
+const input = document.getElementById('botao-copiar')
 
+input.addEventListener('click', () => {
+    
     topLeft = document.getElementById('topLeft').value;
     bottomLeft = document.getElementById('bottomLeft').value;
     topRight = document.getElementById('topRight').value;
@@ -61,4 +56,4 @@ function CopiarValores(){
     .catch((error) =>{
         console.error("Erro ao copiar o texto: ",error)
     })
-}
+});
