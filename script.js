@@ -13,10 +13,7 @@ inputs.forEach(input => {
         const middleBottom = document.getElementById('middleBottom').value;//g
         const middleLeft = document.getElementById('middleLeft').value;//h
 
-        borda.style.borderTopLeftRadius = `${topLeft}px`;
-        borda.style.borderTopRightRadius = `${topRight}px`;
-        borda.style.borderBottomLeftRadius = `${bottomLeft}px`;
-        borda.style.borderBottomRightRadius = `${bottomRight}px`;
+        borda.style.borderRadius = `${topLeft}px ${topRight}px ${bottomLeft}px ${bottomRight}px / ${middleTop}px ${middleRight}px ${middleBottom}px ${middleLeft}px`
     })
 });
 
