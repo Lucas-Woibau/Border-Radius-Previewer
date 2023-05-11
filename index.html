@@ -8,26 +8,22 @@
     <title>Border Radius Previewer</title>
 </head>
 <body>
-    <h1>Border Radius Previewer</h1>
+    <h1>BORDER RADIUS PREVIEWER</h1>
     
     <div id="borda"></div>
     <div id="buttons">
-        <input id="topLeft" type="number" placeholder="px">
-        <input id="bottomLeft" type="number" placeholder="px">
-        <input id="topRight" type="number" placeholder="px">
-        <input id="bottomRight" type="number" placeholder="px">
-    </div>
+        <input id="topLeft" type="range" min="0" max="500" value="0">
+        <input id="bottomLeft" type="range" min="0" max="500" value="0">
+        <input id="topRight" type="range" min="0" max="500" value="0">
+        <input id="bottomRight" type="range" min="0" max="500" value="0">
 
-    <div id="buttons-2">
-        <input id="middleLeft" type="number" placeholder="px">
-        <input id="middleTop" type="number" placeholder="px">
-        <input id="middleRight" type="number" placeholder="px">
-        <input id="middleBottom" type="number" placeholder="px">
-    </div>
+        <div class="valorTxt">
+            <textarea id="valoresTxt" cols="50" rows="1.5" readonly>0px 0px 0px 0px</textarea>
+        </div>
 
-    <button type="button" id="botao-copiar">COPIAR</button>
-    <button type="button" id="botao-mostrar">Habilitar 8 valores!</button>
-    
+        <button type="button" id="botao-copiar">COPIAR</button>
+    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>

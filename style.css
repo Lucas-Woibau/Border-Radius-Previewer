@@ -6,16 +6,17 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #borda{
     display: block;
     width: 300px;
-    height: 250px;
+    height: 300px;
     margin: 50px auto;
     position: relative;
     background-color: blueviolet;
+    border: 1px solid white;
 }
 
 ::-webkit-inner-spin-button{
@@ -23,95 +24,55 @@ body{
 }
 
 #buttons{
-    display: inline-flex;
-    padding: 5px;
+    display: inline-grid;
+    padding: 0 50px;
+    border: 1px solid white;
+    border-radius: 30px;
 }
 
 #topLeft{
-    width: 40px;
-    background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
+    width: 170px;
+    background: rgb(159, 253, 230);
+    margin: 15px 0px;
     text-align: center;
 }
 
 #bottomLeft{
-    width: 40px;
+    width: 170px;
     background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
+    margin: 15px 0px;
     text-align: center;
 }
 
 #topRight{
-    width: 40px;
+    width: 170px;
     background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
+    margin: 15px 0px;
     text-align: center;
 }
 
 #bottomRight{
-    width: 40px;
+    width: 170px;
     background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
+    margin: 15px 0px;
     text-align: center;
-}   
+}    
 
-#buttons-2{
-    display: none;
-    padding: 5px;
-}
-
-#middleLeft{
-    width: 40px;
-    background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
+#valoresTxt{
+    resize: none;
+    width: 170px;   
     text-align: center;
 }
-
-#middleTop{
-    width: 40px;
-    background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
-    text-align: center;
-}
-
-#middleRight{
-    width: 40px;
-    background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
-    text-align: center;
-}
-
-#middleBottom{
-    width: 40px;
-    background-color: rgb(212, 212, 212);
-    font-size: large;
-    margin: auto 2px;
-    text-align: center;
-}   
 
 #botao-copiar{
-    width: 70px;
-    background-color: rgb(253, 178, 236);
+    color: white;
+    width: 170px;
+    background-color: blueviolet;
     font-size: smaller;
     border: none;
-    margin-left: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#botao-mostrar{
-    width: 100px;
-    background-color: rgb(253, 178, 236);
-    font-size: 15px;
-    border: none;
-    margin-left: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
