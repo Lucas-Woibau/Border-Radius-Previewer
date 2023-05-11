@@ -4,6 +4,7 @@ const valoresTxt = document.getElementById('valoresTxt')
 
 inputs.forEach(input => {
     input.addEventListener('input', () =>{
+
         const topLeft = document.getElementById('topLeft').value;//a     
         const topRight = document.getElementById('topRight').value;//b
         const bottomRight = document.getElementById('bottomRight').value;//c

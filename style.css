@@ -30,31 +30,38 @@ body{
     border-radius: 30px;
 }
 
-#topLeft{
+#total{
     width: 170px;
     background: rgb(159, 253, 230);
     margin: 15px 0px;
     text-align: center;
 }
 
+#topLeft{
+    width: 170px;
+    background: rgb(159, 253, 230);
+    margin: 10px 0px;
+    text-align: center;
+}
+
 #bottomLeft{
     width: 170px;
     background-color: rgb(212, 212, 212);
-    margin: 15px 0px;
+    margin: 10px 0px;
     text-align: center;
 }
 
 #topRight{
     width: 170px;
     background-color: rgb(212, 212, 212);
-    margin: 15px 0px;
+    margin: 10px 0px;
     text-align: center;
 }
 
 #bottomRight{
     width: 170px;
     background-color: rgb(212, 212, 212);
-    margin: 15px 0px;
+    margin: 10px 0px;
     text-align: center;
 }    
 
