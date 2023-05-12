@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body{
+    color: rgb(255, 255, 255);
+    background: rgb(181, 181, 181);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#borda{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 25px auto;
+    position: relative;
+    background: linear-gradient(rgb(124, 14, 226), rgb(161, 97, 221));
+    border: 3px solid rgb(57, 1, 110);
+    -webkit-box-shadow: -50px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -50px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -50px 20px 5px rgba(57, 1, 110,.3);
+}
+
+::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+#buttons{
+    display: inline-grid;
+    padding: 0 50px;
+}
+
+#topLeft{
+    width: 170px;
+    background: rgb(159, 253, 230);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#bottomLeft{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#topRight{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#bottomRight{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}    
+
+#valoresTxt{
+    resize: none;
+    width: 360px;   
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: -0.5px;
+}
+
+#botao-copiar{
+    color: white;
+    width: 170px;
+    background: blueviolet;
+    font-size: smaller;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#botao-alterar{
+    color: white;
+    width: 170px;
+    background: blueviolet;
+    font-size: smaller;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#midTopLeft{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#midBottomLeft{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#midTopRight{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#midBottomRight{
+    width: 170px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
