@@ -2,11 +2,23 @@
 
 body{
     color: rgb(255, 255, 255);
-    background: rgb(181, 181, 181);
+    background: linear-gradient(35deg, rgb(250, 208, 255), rgb(245, 255, 103) 70%);
     text-align: center;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+h1{
+    color: rgb(57, 1, 110);
+    font-style:normal;
+    font-size: larger;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 #borda{
@@ -17,9 +29,9 @@ body{
     position: relative;
     background: linear-gradient(rgb(124, 14, 226), rgb(161, 97, 221));
     border: 3px solid rgb(57, 1, 110);
-    -webkit-box-shadow: -50px 10px 5px rgba(57, 1, 110,.3);
-	-moz-box-shadow: -50px 10px 5px rgba(57, 1, 110,.3);
-	box-shadow: -50px 20px 5px rgba(57, 1, 110,.3);
+    -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
 }
 
 ::-webkit-inner-spin-button{
@@ -28,7 +40,24 @@ body{
 
 #buttons{
     display: inline-grid;
-    padding: 0 50px;
+    grid-template-columns: auto 1fr;
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-right: 77px;
+    margin-bottom: 25px;
+    padding: 10px 50px;
+    align-items: center;
+    border: 3px solid rgb(57, 1, 110);
+    text-shadow: -5px 1px 5px rgba(124, 14, 226, 0.285);
+    background: linear-gradient(rgb(164, 164, 164), rgb(255, 255, 255));
+    -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+}
+
+span{
+   text-align: end;
+   color: rgb(57, 1, 110);
+   font-weight: 400;
 }
 
 #topLeft{
@@ -64,11 +93,17 @@ body{
 }    
 
 #valoresTxt{
+    font-size: 15px;
     resize: none;
-    width: 360px;   
+    width: 370px;   
     text-align: center;
     border-radius: 10px;
     letter-spacing: -0.5px;
+    border: 3px solid rgb(57, 1, 110);
+    background: rgb(201, 201, 201);
+    -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
 }
 
 #botao-copiar{
@@ -81,11 +116,16 @@ body{
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid rgb(57, 1, 110);
+    box-shadow: -5px 10px 10px rgba(57, 1, 110,.3);
+    -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
 }
 
 #botao-alterar{
     color: white;
-    width: 170px;
+    width: 150px;
     background: blueviolet;
     font-size: smaller;
     border: none;
@@ -93,6 +133,11 @@ body{
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid rgb(57, 1, 110);
+    box-shadow: -5px 10px 10px rgba(57, 1, 110,.3);
+    -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	-moz-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
+	box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
 }
 
 #midTopLeft{
@@ -127,8 +172,4 @@ body{
     cursor: pointer;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 

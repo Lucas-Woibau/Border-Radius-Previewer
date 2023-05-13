@@ -2,11 +2,11 @@ const borda = document.getElementById('borda')
 const inputs = document.querySelectorAll('input[type = "range"]')
 const valoresTxt = document.getElementById('valoresTxt')
 
-valoresTxt.style.width = `350px`
+valoresTxt.style.width = `400px`
 
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].value = Math.floor(Math.random() * 501);
-  }
+}
   
 const [topLeft, topRight, bottomRight, bottomLeft, midTopLeft, midTopRight, midBottomRight, midBottomLeft] = inputs;
 borda.style.borderRadius = `${topLeft.value}px ${topRight.value}px ${bottomRight.value}px ${bottomLeft.value}px / ${midTopLeft.value}px ${midTopRight.value}px ${midBottomRight.value}px ${midBottomLeft.value}px`;
@@ -70,11 +70,11 @@ input.addEventListener('click', () => {
     navigator.clipboard.writeText(textoClipboard.valueOf())
 
     .then(() => {
-        input.textContent = "COPIADO";
+        input.textContent = "COPIED";
         input.style.backgroundColor = "cadetblue";
         input.style.cursor = "default"
         setTimeout(() => {
-            input.textContent = "COPIAR"
+            input.textContent = "COPY"
             input.style.backgroundColor = "blueviolet";
             input.style.cursor = "pointer"
         }, 2000);
