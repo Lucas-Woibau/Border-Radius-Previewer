@@ -5,7 +5,7 @@ const valoresTxt = document.getElementById('valoresTxt')
 valoresTxt.style.width = `400px`
 
 for (let i = 0; i < inputs.length; i++) {
-    inputs[i].value = Math.floor(Math.random() * 501);
+    inputs[i].value = Math.floor(Math.random() * 301);
 }
   
 const [topLeft, topRight, bottomRight, bottomLeft, midTopLeft, midTopRight, midBottomRight, midBottomLeft] = inputs;
@@ -40,7 +40,7 @@ function AtualizaBorda(){
 
 // Atribui valores aleatórios aos inputs
 inputs.forEach(input => {
-    input.value = Math.floor(Math.random() * 501);
+    input.value = Math.floor(Math.random() * 301);
   });
 
 // Atualiza a borda com os valores iniciais

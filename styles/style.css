@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html{
+    height: 100vh;
+}
+
 body{
     color: rgb(255, 255, 255);
     background: linear-gradient(35deg, rgb(250, 208, 255), rgb(245, 255, 103) 70%);
@@ -7,7 +11,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 100vh;
 }
 
 h1{
@@ -42,7 +45,7 @@ a{
     display: inline-grid;
     grid-template-columns: auto 1fr;
     grid-area: 1 / 1 / 2 / 2; 
-    margin-right: 77px;
+    margin-right: 0px;
     margin-bottom: 25px;
     padding: 10px 50px;
     align-items: center;
