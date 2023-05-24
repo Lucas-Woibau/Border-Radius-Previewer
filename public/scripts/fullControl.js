@@ -55,17 +55,7 @@ const input = document.getElementById('botao-copiar')
 
 input.addEventListener('click', () => {
 
-    const topLeft = document.getElementById('topLeft').value;//a     
-    const topRight = document.getElementById('topRight').value;//b
-    const bottomRight = document.getElementById('bottomRight').value;//c
-    const bottomLeft = document.getElementById('bottomLeft').value;//d
-
-    const midTopLeft = document.getElementById('midTopLeft').value;//a     
-    const midTopRight = document.getElementById('midTopRight').value;//b
-    const midBottomRight = document.getElementById('midBottomRight').value;//c
-    const midBottomLeft = document.getElementById('midBottomLeft').value;//d
-
-    const textoClipboard = `border-radius: ${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px / ${midTopLeft}px ${midTopRight}px ${midBottomRight}px ${midBottomLeft}px;`
+    const textoClipboard = `border-radius: ${valoresTxt.value};`
 
     navigator.clipboard.writeText(textoClipboard.valueOf())
 

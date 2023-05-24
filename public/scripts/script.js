@@ -24,13 +24,8 @@ inputs.forEach(input => {
 const input = document.getElementById('botao-copiar')
 
 input.addEventListener('click', () => {
-    
-    const topLeft = document.getElementById('topLeft').value;//a     
-    const topRight = document.getElementById('topRight').value;//b
-    const bottomRight = document.getElementById('bottomRight').value;//c
-    const bottomLeft = document.getElementById('bottomLeft').value;//d
 
-    const textoClipboard = `border-radius: ${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px;`
+    const textoClipboard = `border-radius: ${valoresTxt.value};`
 
     navigator.clipboard.writeText(textoClipboard.valueOf())
 

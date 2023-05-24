@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
     <title>Border Radius Previewer</title>
 </head>
 <body>
     <h1>BORDER RADIUS PREVIEWER</h1>
-    <a href="../pages/fullcontrol.html"><button type="button" id="botao-alterar">8 - Full Control</button></a>
+    <a href="../public/pages/fullcontrol.html"><button type="button" id="botao-alterar">8 - Full Control</button></a>
+    <div  class="circle1"></div>
+    <div  class="circle2"></div>
     <div id="borda"></div>
     <div id="buttons">
         <span>Top Left:</span>
@@ -19,8 +21,7 @@
         <span>Bottom Right:</span>
         <input id="bottomRight" type="range" min="0" max="300" value="0">
         <span>Bottom Left:</span>
-        <input id="bottomLeft" type="range" min="0" max="300" value="0">
-     
+        <input id="bottomLeft" type="range" min="0" max="300" value="0">    
     </div>
     
     <div class="valorTxt">
@@ -29,6 +30,6 @@
 
     <button type="button" id="botao-copiar">COPY</button>
    
-    <script src="../scripts/script.js"></script>
+    <script src="../public/scripts/script.js"></script>
 </body>
 </html>

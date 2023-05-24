@@ -4,7 +4,7 @@ html{
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: 'Brush Script MT', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -13,6 +13,27 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+.circle1{
+    display: flex;
+    background: linear-gradient(35deg, rgb(250, 208, 255), rgb(245, 255, 103) 70%);
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    z-index: -10;
+    border-radius: 100%;
+}
+
+.circle2{
+    display: flex;
+    background: linear-gradient(35deg, rgb(250, 208, 255), rgb(245, 255, 103) 70%);
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    z-index: -10;
+    margin-top: 100px;
+    border-radius: 100%;
 }
 
 h1{
@@ -101,7 +122,6 @@ span{
     resize: none;
     width: 370px;   
     text-align: center;
-    font-family: 'Brush Script MT', cursive;
     border-radius: 10px;
     letter-spacing: -0.5px;
     border: 3px solid rgb(57, 1, 110);
@@ -120,7 +140,6 @@ span{
     margin-bottom: 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: 'Brush Script MT', cursive;
     border: 3px solid rgb(57, 1, 110);
     box-shadow: -5px 10px 10px rgba(57, 1, 110,.3);
     -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
@@ -137,7 +156,6 @@ span{
     margin-bottom: 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: 'Brush Script MT', cursive;
     border: 3px solid rgb(57, 1, 110);
     box-shadow: -5px 10px 10px rgba(57, 1, 110,.3);
     -webkit-box-shadow: -20px 10px 5px rgba(57, 1, 110,.3);
